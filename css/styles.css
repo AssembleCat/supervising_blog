@@ -4459,6 +4459,9 @@ fieldset:disabled .btn {
 }
 
 .accordion {
+  max-width: 600px; /* 원하는 최대 너비 */
+  margin: 0 auto; /* 중앙 정렬 */
+  flex-direction: column; /* 세로 정렬 */
   --bs-accordion-color: #212529;
   --bs-accordion-bg: #fff;
   --bs-accordion-transition: color 0.15s ease-in-out,
@@ -8432,7 +8435,7 @@ fieldset:disabled .btn {
 }
 
 .bg-primary {
-  --bs-bg-opacity: 1;
+  --bs-bg-opacity: 0.7;
   background-color: rgba(
     var(--bs-primary-rgb),
     var(--bs-bg-opacity)
