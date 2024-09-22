@@ -5,6 +5,20 @@ function sendEmail() {
   const phone = document.getElementById("phone").value;
   const message = document.getElementById("message").value;
 
+  // 성공/실패 메시지 요소
+  const successMessage = document.getElementById("submitSuccessMessage");
+  const errorMessage = document.getElementById("submitErrorMessage");
+  const inputErrorMessage = document.getElementById("inputErrorMessage");
+
+  // 메시지 숨기기
+  successMessage.classList.add("d-none");
+  errorMessage.classList.add("d-none");
+  inputErrorMessage.classList.add("d-none");
+
+  if (name === "" || email === "" || phone === "" || message === "") {
+    inputErrorMessage.classList.remove("d-none");
+    return;
+  }
   // EmailJS API로 이메일 전송
   const data = {
     service_id: "service_m8y9g4b", // EmailJS에서 발급받은 서비스 ID
@@ -17,14 +31,6 @@ function sendEmail() {
       client_message: message,
     },
   };
-
-  // 성공/실패 메시지 요소
-  const successMessage = document.getElementById("submitSuccessMessage");
-  const errorMessage = document.getElementById("submitErrorMessage");
-
-  // 메시지 숨기기
-  successMessage.classList.add("d-none");
-  errorMessage.classList.add("d-none");
 
   // fetch를 이용해 EmailJS REST API에 요청 보내기
   fetch("https://api.emailjs.com/api/v1.0/email/send", {
