@@ -276,7 +276,6 @@
                   class="form-control"
                   id="name"
                   type="text"
-                  placeholder="Enter your name..."
                   data-sb-validations="required"
                 />
                 <label for="name">이름</label>
@@ -290,7 +289,6 @@
                   class="form-control"
                   id="email"
                   type="email"
-                  placeholder="name@example.com"
                   data-sb-validations="required,email"
                 />
                 <label for="email">이메일</label>
@@ -307,7 +305,6 @@
                   class="form-control"
                   id="phone"
                   type="tel"
-                  placeholder="(123) 456-7890"
                   data-sb-validations="required"
                 />
                 <label for="phone">연락처</label>
@@ -321,7 +318,6 @@
                   class="form-control"
                   id="message"
                   type="text"
-                  placeholder="Enter your message here..."
                   style="height: 10rem"
                   data-sb-validations="required"
                 ></textarea>
@@ -335,9 +331,8 @@
               </div>
               <!-- Submit success message-->
               <div class="d-none" id="submitSuccessMessage">
-                <div class="text-center mb-3">
+                <div class="text-center text-success mb-3">
                   <div class="fw-bolder">전송 성공</div>
-                  <br />
                 </div>
               </div>
               <!-- Submit error message-->
@@ -352,9 +347,10 @@
               <!-- Submit Button-->
               <div class="d-grid">
                 <button
-                  class="btn btn-primary btn-xl disabled"
+                  class="btn btn-primary btn-xl"
                   id="submitButton"
-                  type="submit"
+                  type="button"
+                  onclick="sendEmail()"
                 >
                   전송
                 </button>
@@ -378,6 +374,7 @@
         </div>
       </div>
     </footer>
+    <script src="js/sendEmail.js"></script>
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- SimpleLightbox plugin JS-->
