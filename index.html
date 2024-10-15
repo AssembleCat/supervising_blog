@@ -95,10 +95,13 @@
       <div class="container px-4 px-lg-5">
         <div class="row gx-4 gx-lg-5 justify-content-center">
           <div class="col-lg-8 text-center">
-            <h2 class="text-white mt-0">안녕하세요 상담사 신은미입니다.</h2>
+            <h2 class="text-white mt-0">
+              안녕하세요 상담사
+              <span class="fw-bold text-dark p-1 rounded">신은미</span>입니다.
+            </h2>
             <hr class="divider divider-light" />
-            <div>
-              <p class="text-white-75 mb-4">
+            <div class="content-box p-4">
+              <p class="text-white-75 text-justify">
                 <strong>
                   (한국상담심리학회 1급 2116호 / 한국상담학회 1급 1201호) <br />
                   이 홈페이지는 한국상담학회, 한국상담심리학회 소속 상담사의
@@ -113,11 +116,22 @@
                 </strong>
               </p>
             </div>
-            <!-- <a class="btn btn-light btn-xl" href="#services">Get Started!</a> -->
           </div>
         </div>
       </div>
     </section>
+
+    <style>
+      .content-box {
+        background-color: rgba(0, 0, 0, 0.3);
+        max-width: 800px;
+        margin: 0 auto;
+        border-radius: 7px;
+      }
+      .text-justify {
+        text-align: justify; /* 텍스트 양쪽 정렬 */
+      }
+    </style>
     <!-- Services-->
     <section class="page-section" id="services">
       <div class="container px-4 px-lg-5">
@@ -125,55 +139,72 @@
         <hr class="divider" />
         <div class="row gx-4 gx-lg-5">
           <div class="col-lg-3 col-md-6 text-center">
-            <div class="mt-5">
-              <div class="mb-2"><i class="bi-gem fs-1 text-primary"></i></div>
-              <h3 class="h4 mb-2">주요 상담이론</h3>
-              <p class="text-muted mb-0">
-                정신역동,대상관계이론,자기심리학,인간중심이론,통합적 접근
-              </p>
+            <div class="mt-5 text-start">
+              <div class="mb-2 ms-3">
+                <i class="bi-gem fs-1 text-primary"></i>
+              </div>
+              <h3 class="h4 mb-2 ms-3">주요 상담이론</h3>
+              <ul>
+                <li>정신역동</li>
+                <li>대상관계이론</li>
+                <li>자기심리학</li>
+                <li>인간중심이론</li>
+                <li>통합적 접근</li>
+              </ul>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 text-center">
-            <div class="mt-5">
-              <div class="mb-2">
+            <div class="mt-5 text-start">
+              <div class="mb-2 ms-3">
                 <i class="bi-laptop fs-1 text-primary"></i>
               </div>
-              <h3 class="h4 mb-2">자격</h3>
-              <p class="text-muted mb-0">
-                한국상담학회 1급 (No.1201) 2급(No 6225) <br />
-                한국상담심리학회 1급(No.2116) 2급(No. 4937) <br />
-                가정폭력,성폭력 전문상담원 <br />
-                청소년상담사 3급 <br />
-              </p>
+              <h3 class="h4 mb-2 ms-3">자격</h3>
+              <ul>
+                <li>한국상담학회 1급 (No.1201) 2급(No 6225)</li>
+                <li>한국상담심리학회 1급(No.2116) 2급(No. 4937)</li>
+                <li>가정폭력, 성폭력 전문상담원</li>
+                <li>청소년상담사 3급</li>
+              </ul>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 text-center">
-            <div class="mt-5">
-              <div class="mb-2"><i class="bi-globe fs-1 text-primary"></i></div>
-              <h3 class="h4 mb-2">학력</h3>
-              <p class="text-muted mb-0">
-                아주대 일반대학원 의료인문정신분석 박사과정 <br />
-                동국대 교육대학원 상담심리 석사 <br />
-                서울디지털대학교 상담심리 학사 <br />
-              </p>
+            <div class="mt-5 text-start">
+              <div class="mb-2 ms-3">
+                <i class="bi-globe fs-1 text-primary"></i>
+              </div>
+              <h3 class="h4 mb-2 ms-3">학력</h3>
+              <ul>
+                <li>아주대 일반대학원 의료인문정신분석 박사과정</li>
+                <li>동국대 교육대학원 상담심리 석사</li>
+                <li>서울디지털대학교 상담심리 학사</li>
+              </ul>
             </div>
           </div>
           <div class="col-lg-3 col-md-6 text-center">
-            <div class="mt-5">
-              <div class="mb-2"><i class="bi-heart fs-1 text-primary"></i></div>
-              <h3 class="h4 mb-2">경력</h3>
-              <p class="text-muted mb-0">
-                현) 유해피 심리상담센터 수퍼바이저 <br />
-                전) (주)다우기술 객원상담사 <br />
-                전) 연세대(원주)학생상담센터 상담사 <br />
-                전) 성남가정폭력상담소 상담위원 <br />
-                전) 성남시청소년상담복지센터 청소년동반자 <br />
-              </p>
+            <div class="mt-5 text-start">
+              <div class="mb-2 ms-3">
+                <i class="bi-heart fs-1 text-primary"></i>
+              </div>
+              <h3 class="h4 mb-2 ms-3">경력</h3>
+              <ul>
+                <li>현) 유해피 심리상담센터 수퍼바이저</li>
+                <li>전) (주)다우기술 객원상담사</li>
+                <li>전) 연세대(원주)학생상담센터 상담사</li>
+                <li>전) 성남가정폭력상담소 상담위원</li>
+                <li>전) 성남시청소년상담복지센터 청소년동반자</li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <style>
+      .text-start {
+        text-align: left;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    </style>
     <!-- Portfolio-->
     <div id="portfolio">
       <div class="container-fluid p-0">
@@ -383,28 +414,30 @@
               <div>
                 <h6 class="mb-1 mt-1">소속학회</h6>
               </div>
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckDefault"
-                />
-                <label class="form-check-label" for="flexCheckDefault">
-                  한국상담심리학회
-                </label>
-              </div>
-              <div class="form-check">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  value=""
-                  id="flexCheckChecked"
-                  checked
-                />
-                <label class="form-check-label" for="flexCheckChecked">
-                  한국상담학회
-                </label>
+              <div class="d-flex mb-2">
+                <div class="form-check me-3">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                  <label class="form-check-label" for="flexCheckDefault">
+                    한국상담심리학회
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckChecked"
+                    checked
+                  />
+                  <label class="form-check-label" for="flexCheckChecked">
+                    한국상담학회
+                  </label>
+                </div>
               </div>
               <!-- Name input-->
               <div class="form-floating mb-3">
@@ -503,26 +536,40 @@
         <div class="row gx-2 gx-lg-2 justify-content-center">
           <div class="col-lg-2 text-center mb-5 mb-lg-0">
             <i class="bi-phone fs-2 mb-3 text-muted"></i>
-            <div>010 1234 5678</div>
+            <div>010 5347 4203</div>
           </div>
           <div class="col-lg-2 text-center mb-5 mb-lg-0">
             <i class="bi bi-envelope fs-2 mb-3 text-muted"></i>
-            <div>myemail@email.com</div>
+            <div>ssem73@hanmail.net</div>
           </div>
-        </div>
-        <div class="justify-content-center">
-          <iframe
-            src="https://calendar.google.com/calendar/embed?src=groove.csy.1226%40gmail.com&ctz=Asia%2FSeoul"
-            style="border: 0"
-            width="800"
-            height="600"
-            frameborder="0"
-            scrolling="no"
-          ></iframe>
         </div>
       </div>
     </section>
-    <!-- Footer-->
+    <section class="page-section bg-dark text-white">
+      <div class="container px-4 px-lg-5 text-center">
+        <h2 class="mb-4">일정 확인하기</h2>
+        <hr class="divider-light" />
+        <p class="text-white-75 mb-5">
+          일정은 신청현황에 따라 실시간으로 변경될 수 있습니다.
+        </p>
+      </div>
+      <div class="d-flex flex-column align-items-center">
+        <!-- Google Calendar iframe -->
+        <iframe
+          src="https://calendar.google.com/calendar/embed?src=groove.csy.1226%40gmail.com&ctz=Asia%2FSeoul"
+          style="
+            border: 0;
+            width: 100%;
+            max-width: 900px;
+            height: 600px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          "
+          frameborder="0"
+          scrolling="no"
+        ></iframe>
+      </div>
+    </section>
     <footer class="bg-light py-5">
       <div class="container px-4 px-lg-5">
         <div class="small text-center text-muted">
