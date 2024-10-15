@@ -11266,7 +11266,7 @@ header.masthead {
       rgba(92, 77, 66, 0.8) 0%,
       rgba(92, 77, 66, 0.8) 100%
     ),
-    url("../assets/img/bg-masthead.jpg");
+    url("../assets/img/fullsize/mago_main1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -11387,4 +11387,10 @@ header.masthead .h1 {
 #portfolio .container-xl .portfolio-box:hover .portfolio-box-caption,
 #portfolio .container-xxl .portfolio-box:hover .portfolio-box-caption {
   opacity: 1;
+}
+
+.portfolio-box img {
+  width: 100%; /* 이미지가 부모 요소의 너비를 꽉 채우도록 설정 */
+  height: 400px; /* 일정한 높이 설정 */
+  object-fit: cover; /* 이미지를 자르고 비율을 유지하면서 꽉 채우기 */
 }
