@@ -1,5 +1,7 @@
 function sendEmail() {
   // 폼 입력값 가져오기
+  const isConference1 = document.getElementById("flexCheckFirst").checked; // 한국상담심리학회
+  const isConference2 = document.getElementById("flexCheckSecond").checked; // 한국상담학회
   const name = document.getElementById("name").value;
   const email = document.getElementById("email").value;
   const phone = document.getElementById("phone").value;
@@ -19,16 +21,28 @@ function sendEmail() {
     inputErrorMessage.classList.remove("d-none");
     return;
   }
+
+  var conference1 = "No";
+  var conference2 = "No";
+  if (isConference1) {
+    conference1 = "Yes";
+  }
+  if (isConference2) {
+    conference2 = "Yes";
+  }
+
   // EmailJS API로 이메일 전송
   const data = {
-    service_id: "service_m8y9g4b", // EmailJS에서 발급받은 서비스 ID
-    template_id: "template_og65l7e", // EmailJS에서 발급받은 템플릿 ID template_og65l7e
-    user_id: "_S9PWN2WEE80xwpdj", // EmailJS에서 발급받은 사용자 ID
+    service_id: "service_pf16a53", // EmailJS에서 발급받은 서비스 ID
+    template_id: "template_wk9li8j", // EmailJS에서 발급받은 템플릿 ID
+    user_id: "pyWu71DaG2LuGeHBq", // EmailJS에서 발급받은 Public Key
     template_params: {
-      client_name: name,
-      client_email: email,
-      client_phone: phone,
-      client_message: message,
+      request_is_first: conference1,
+      request_is_second: conference2,
+      request_name: name,
+      request_email: email,
+      request_phone: phone,
+      request_message: message,
     },
   };
 
