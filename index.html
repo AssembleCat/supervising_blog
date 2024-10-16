@@ -123,7 +123,6 @@
         </div>
       </div>
     </section>
-
     <style>
       .content-box {
         background-color: rgba(0, 0, 0, 0.3);
@@ -135,7 +134,6 @@
         text-align: justify; /* 텍스트 양쪽 정렬 */
       }
     </style>
-    <!-- Services-->
     <!-- Services-->
     <section class="page-section" id="services">
       <div class="container px-4 px-lg-5">
@@ -211,15 +209,15 @@
         margin-right: auto;
       }
     </style>
-    <!-- Portfolio-->
     <div id="portfolio">
       <div class="container-fluid p-0">
         <div class="row g-0 justify-content-center">
+          <!-- 첫번째 이미지 -->
           <div class="col-lg-6 col-sm-6">
-            <a
+            <span
               class="portfolio-box"
-              href="assets/img/thumbnails/mago1.jpg"
-              title="Project Name"
+              data-bs-toggle="modal"
+              data-bs-target="#modal1"
             >
               <img
                 class="img-fluid"
@@ -227,19 +225,21 @@
                 alt="..."
               />
               <div class="portfolio-box-caption">
-                <div class="project-category text-white-50"><화엄경></div>
+                <div class="project-category text-white-50">화엄경</div>
                 <div class="project-name">
                   나무는 꽃을 버려야 열매를 맺고 <br />
                   강물은 강을 버려야 바다에 이른다. <br />
                 </div>
               </div>
-            </a>
+            </span>
           </div>
+
+          <!-- 두번째 이미지 -->
           <div class="col-lg-6 col-sm-6">
-            <a
+            <span
               class="portfolio-box"
-              href="assets/img/thumbnails/mago2.jpg"
-              title="여기인가?"
+              data-bs-toggle="modal"
+              data-bs-target="#modal2"
             >
               <img
                 class="img-fluid"
@@ -250,30 +250,15 @@
                 <div class="project-category text-white-50"></div>
                 <div class="project-name">'누구의 문제인가'</div>
               </div>
-            </a>
+            </span>
           </div>
-          <!--           <div class="col-lg-6 col-sm-6">
-            <a
-              class="portfolio-box"
-              href="assets/img/thumbnails/mago3.jpg"
-              title="Project Name"
-            >
-              <img
-                class="img-fluid"
-                src="assets/img/thumbnails/mago3.jpg"
-                alt="..."
-              />
-              <div class="portfolio-box-caption">
-                <div class="project-category text-white-50">Category</div>
-                <div class="project-name">Project Name</div>
-              </div>
-            </a>
-          </div> -->
+
+          <!-- 세번째 이미지 -->
           <div class="col-lg-6 col-sm-6">
-            <a
+            <span
               class="portfolio-box"
-              href="assets/img/thumbnails/mago4.jpg"
-              title="Project Name"
+              data-bs-toggle="modal"
+              data-bs-target="#modal3"
             >
               <img
                 class="img-fluid"
@@ -281,16 +266,18 @@
                 alt="..."
               />
               <div class="portfolio-box-caption">
-                <div class="project-category text-white-50"><마샤 리네한></div>
+                <div class="project-category text-white-50">마샤 리네한</div>
                 <div class="project-name">Treat them as people</div>
               </div>
-            </a>
+            </span>
           </div>
+
+          <!-- 네번째 이미지 -->
           <div class="col-lg-6 col-sm-6">
-            <a
+            <span
               class="portfolio-box"
-              href="assets/img/thumbnails/mago5.jpg"
-              title="Project Name"
+              data-bs-toggle="modal"
+              data-bs-target="#modal4"
             >
               <img
                 class="img-fluid"
@@ -298,40 +285,181 @@
                 alt="..."
               />
               <div class="portfolio-box-caption">
-                <div class="project-category text-white-50"><마가렛 미드></div>
+                <div class="project-category text-white-50">마가렛 미드</div>
                 <div class="project-name">부러졌다 붙은 사람의 뼈</div>
               </div>
-            </a>
+            </span>
           </div>
-          <!--           <div class="col-lg-4 col-sm-6">
-            <a
-              class="portfolio-box"
-              href="assets/img/thumbnails/mago6.jpg"
-              title="Project Name"
-            >
-              <img
-                class="img-fluid"
-                src="assets/img/thumbnails/mago6.jpg"
-                alt="..."
-              />
-              <div class="portfolio-box-caption">
-                <div class="project-category text-white-50">Category</div>
-                <div class="project-name">Project Name</div>
-              </div>
-            </a>
-          </div> -->
         </div>
       </div>
     </div>
 
-    <!-- Call to action-->
-    <!--  <section class="page-section bg-dark text-white">
-      <div class="container px-4 px-lg-5 text-center">
-        <h2 class="mb-4">이벤트_제목</h2>
-        <hr class="divider-light" />
-        <p class="text-white-75 mb-5">메인페이지_ 본문</p>
+    <!-- 첫번째 이미지 모달 -->
+    <div
+      class="modal fade"
+      id="modal1"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <img
+            class="modal-img"
+            src="assets/img/thumbnails/mago1.jpg"
+            alt="..."
+          />
+          <div class="modal-img-overlay"></div>
+          <div class="modal-caption">
+            <p class="modal-text">
+              내가 무언가에 관심을 가지고 발전시키고자 뛰어든 행위가 있어야
+              꽃으로 피어난다.
+            </p>
+            <p class="modal-text">
+              뿌리가 물을 빨아들이고, 잎이 자라서 꽃을 피우기까지 시간이
+              걸리지만 살아있는 존재는 무슨 꽃이든 피울 수 있다.
+            </p>
+            <p class="modal-text">
+              살고 싶은 마음이 피우는 꽃이다. 피우고 싶은 꽃이 나는 있는가?
+              완벽하게 준비된 시간은 영원히 오지 않아.
+            </p>
+            <p class="modal-text">
+              먼저 시작하고 하면서 채워 나가자. 부족해도 살짝 들이밀고 가봐.
+              인생은 짧아. 덧없지. 그런데 말야. 짧고 덧없는 인생. 내가 의미를
+              가지고 살아가면 ENOUGH
+            </p>
+          </div>
+        </div>
       </div>
-    </section> -->
+    </div>
+
+    <!-- 두번째 이미지 모달 -->
+    <div
+      class="modal fade"
+      id="modal2"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <img
+            class="modal-img"
+            src="assets/img/thumbnails/mago2.jpg"
+            alt="..."
+          />
+          <div class="modal-img-overlay"></div>
+          <div class="modal-caption">
+            <p class="modal-text">
+              내 마음이 불편하면 나의 문제. 겹겹이 쌓인 나의 심리구조로 대상을
+              바라보는 나의 시선들에서 오는 어려움.
+            </p>
+            <p class="modal-text">
+              그러니 그의 변화를 바랄게 아니라 내 마음 관리를 먼저하자. 말랑말랑
+              유연하게.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 세번째 이미지 모달 -->
+    <div
+      class="modal fade"
+      id="modal3"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <img
+            class="modal-img"
+            src="assets/img/thumbnails/mago4.jpg"
+            alt="..."
+          />
+          <div class="modal-img-overlay"></div>
+          <div class="modal-caption">
+            <p class="modal-text">
+              마샤 리네한(DBT 이론 창시자)이 내담자를 대하는 상담자의 태도에
+              대해 한 말. 노트북에 붙여두고 늘 기억하려고 한다.
+            </p>
+            <p class="modal-text">
+              어떠한 심리적 장애가 있다는 진단명으로 그들을 대할 것이 아니라
+              지금 이 순간 힘든 삶을 살아가고 있는 고유한 존재, 한 사람으로
+              대해야지. 다짐.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 네번째 이미지 모달 -->
+    <div
+      class="modal fade"
+      id="modal4"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <img
+            class="modal-img"
+            src="assets/img/thumbnails/mago5.jpg"
+            alt="..."
+          />
+          <div class="modal-img-overlay"></div>
+          <div class="modal-caption">
+            <p class="modal-text">
+              마가렛 미드가 인간 문명의 시작 증거로 부러졌다 붙은 인간의 허벅지
+              뼈를 꼽았는데 그 인싸이트가 놀랍다.
+            </p>
+            <p class="modal-text">
+              인간이 동물과 다르게 문명을 만들어간 시작은 서로 돕고 살 수 있는
+              능력이고 그 증거가 바로 그 뼈. 그 옛날 뼈가 부러졌지만 죽지않고
+              살아남은 사람이 있었다는 건 그를 돕는 존재가 옆에 있었기 때문이다.
+            </p>
+            <p class="modal-text">
+              결국 인간은 홀로 살아가지 못하고 돕고 사는 존재이다. 사람과 사람이
+              연결되어 살아가고 성장할 수 있도록 돕는 것이 내 직업이다.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <style>
+      .modal-img {
+        max-width: 100%;
+        height: 100vh;
+        object-fit: cover;
+        height: auto;
+      }
+      .modal-content {
+        background-color: rgba(0, 0, 0, 0.8);
+        position: relative;
+        border: none;
+      }
+      .modal-img-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* 어두운 반투명 오버레이 */
+        z-index: 5;
+      }
+      .modal-caption {
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        color: white;
+        z-index: 10;
+      }
+      .modal-text {
+        font-size: 1.2rem;
+      }
+    </style>
     <section class="page-section bg-primary text-white">
       <div class="container text-center">
         <h2 class="mb-4">자주 묻는 질문</h2>
@@ -359,7 +487,6 @@
               <div class="accordion-body text-justify">
                 홈페이지 아래 수퍼비전 가능한 일정을 확인하고 신청서를
                 작성해주세요. <br />
-
                 1-2일 내로 답변을 드리겠습니다. <br />
                 <br />
                 1)일정확인 <br />
@@ -422,7 +549,6 @@
         </div>
       </div>
     </section>
-    <!-- Contact-->
     <section class="page-section" id="contact">
       <div class="container px-4 px-lg-5">
         <div class="row gx-4 gx-lg-5 justify-content-center">
@@ -434,7 +560,6 @@
         <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
           <div class="col-lg-6">
             <form id="contactForm">
-              <!--소속학회 TODO(가로정렬) -->
               <div>
                 <h6 class="mb-1 mt-1">소속학회</h6>
               </div>
@@ -462,7 +587,6 @@
                   </label>
                 </div>
               </div>
-              <!-- Name input-->
               <div class="form-floating mb-3">
                 <input
                   class="form-control"
@@ -475,7 +599,6 @@
                   이름을 입력해주세요.
                 </div>
               </div>
-              <!-- Email address input-->
               <div class="form-floating mb-3">
                 <input
                   class="form-control"
@@ -491,7 +614,7 @@
                   유효한 이메일이 아닙니다.
                 </div>
               </div>
-              <!-- Phone number input-->
+              \
               <div class="form-floating mb-3">
                 <input
                   class="form-control"
@@ -504,8 +627,6 @@
                   연락처를 입력해주세요.
                 </div>
               </div>
-
-              <!-- Message input-->
               <div class="form-floating mb-3">
                 <textarea
                   class="form-control"
@@ -519,23 +640,12 @@
                   2024년 10월 29일 19시
                   <br />
                 </label>
-                <!--<div
-                  class="invalid-feedback"
-                  data-sb-feedback="message:required"
-                >
-                  A message is required.
-                </div>-->
               </div>
-              <!-- Submit success message-->
               <div class="d-none" id="submitSuccessMessage">
                 <div class="text-center text-success mb-3">
                   <div class="fw-bolder">전송 성공</div>
                 </div>
               </div>
-              <!-- Submit error message-->
-              <!---->
-              <!-- This is what your users will see when there is-->
-              <!-- an error submitting the form-->
               <div class="d-none" id="inputErrorMessage">
                 <div class="text-center text-danger mb-3">
                   전송 실패 - 정보를 모두 입력해주시기 바랍니다.
@@ -546,7 +656,6 @@
                   전송 실패 - 잠시후 다시 시도 바랍니다.
                 </div>
               </div>
-              <!-- Submit Button-->
               <div class="d-grid">
                 <button
                   class="btn btn-primary btn-xl"
